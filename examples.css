@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Inconsolata:wght@200;300;400;500;600;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+font-family: 'Major Mono Display', monospace;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Inconsolata', monospace;
+*/
+
+
+body {
+	background-color: #000;
+	margin: 0;
+}
+
+#container {
+    clear:both;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+header {
+	position:fixed;
+	left:0px;
+	top:0px;
+	height: 50px;
+	width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 20px;
+	text-align:center;
+	color: #fafafa;
+	box-shadow: 0px 5px 20px 1px #000; 
+	background-color:#0d0d0d;
+	background: linear-gradient(90deg, rgba(8,8,8,.95) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
+    z-index: 99;
+}
+
+header h1 {
+    float:left;
+    width: 25%;
+    margin-top:0px;	
+	text-align: left;	
+	margin-left:10%;
+    font: 30pt 'Roboto', sans-serif;
+    text-shadow: 3px 2px 2px #3d3d3d;
+	font-weight: 500;
+	font-style: italic;
+    color: #fafafa;
+}
+
+header h1 a:link, header h1 a:visited, header h1 a:hover, header h1 a:active {
+    color: #fafafa;
+    text-decoration:none;
+}
+
+nav {
+	float: right;
+	width: auto;
+	text-align: right;	
+	margin-right: 10%;
+}
+
+nav li {
+	float: left;
+	list-style-type: none;
+    font: 16pt  'Roboto Mono', monospace;
+    text-shadow: 0px 0px 2px #808080;
+	padding-right: 20px;
+}
+
+
+main {
+	position:relative;
+	top: 70px;
+}
+
+main section {
+    background-color: #121212;
+	padding: 4%;
+	color: #ebebeb;
+	overflow-y: auto;
+}
+
+main section:nth-child(odd) {
+    background-color: #050505;
+  }
+
+main section h2 {
+	font: 18pt 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+main section h3 {
+	font: 14pt 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+main section ul{
+    list-style: square;
+}
+
+main section p, ul, address {
+	font-family: 'Roboto Mono', monospace;
+}
+
+footer {
+	position:relative;
+	top: 70px;
+	height:100px;
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #050505;
+	color:#ebebeb;
+	font: 10pt 'Roboto', sans-serif;
+    text-align: center;
+	padding-top: 10px;
+    background: linear-gradient(90deg, rgba(16,16,16,.4) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
+}
+
+a:link {
+	color:#fafafa;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#fafafa;
+}
+	
+a:hover {
+	color:#cfc800;
+}
+
+a:active {
+	color:#cfc800;
+}
