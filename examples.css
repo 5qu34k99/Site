@@ -35,7 +35,7 @@ header {
 	color: #fafafa;
 	box-shadow: 0px 5px 20px 1px #000; 
 	background-color:#0d0d0d;
-	background: linear-gradient(90deg, rgba(8,8,8,.95) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
+	background: linear-gradient(45deg, rgba(8,8,8,.95) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
     z-index: 99;
 }
 
@@ -125,7 +125,7 @@ footer {
 	font: 10pt 'Roboto', sans-serif;
     text-align: center;
 	padding-top: 10px;
-    background: linear-gradient(90deg, rgba(16,16,16,.4) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
+    background: linear-gradient(45deg, rgba(16,16,16,.4) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
 }
 
 a:link {
