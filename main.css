@@ -90,25 +90,15 @@ main section:nth-child(odd) {
     background-color: #050505;
   }
 
-main section h2 {
-	font: 18pt 'Roboto', sans-serif;
-	font-style: italic;
-	font-weight: 400;
-}
-
-main section p {
-	font-family: 'Roboto Mono', monospace;
-}
-
 
 #home {
-	background: #050505;
+	background-color: #050505;
 }
 
 /* Slideshow container */
 .slideshow-container {
 	box-sizing: border-box;
-	max-width: 50%;
+	max-width: 80%;
  	position: relative;
   	margin: auto;
 }
@@ -205,7 +195,7 @@ main section p {
 */
 
 #links {
-	background: #121212;
+	background-color: #121212;
 }
 
 #linksGraphic {
@@ -223,15 +213,44 @@ main section p {
 }
 
 #linksText {
+	width: 90%;
+	height: 50vh;
+	background: radial-gradient(farthest-corner at 750px 900px, rgba(16,16,16,.4) 20%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 40%, rgba(128,135,3,.4) 45%, rgba(143,121,5,.4) 50%, rgba(140,82,12,.4) 55%, rgba(31,7,85,.4) 70%, rgba(16,16,16,.4) 80%),
+		linear-gradient(105deg, rgba(16,16,16,.4) 20%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 40%, rgba(128,135,3,.4) 45%, rgba(143,121,5,.4) 50%, rgba(140,82,12,.4) 55%, rgba(31,7,85,.4) 70%, rgba(16,16,16,.4) 80%),
+		linear-gradient(357deg, rgba(16,16,16,.7) 20%, rgba(0,7,93,.7) 25%, rgba(1,97,116,.7) 35%, rgba(5,135,59,.7) 40%, rgba(128,135,3,.7) 45%, rgba(143,121,5,.7) 50%, rgba(140,82,12,.7) 55%, rgba(31,7,85,.7) 70%, rgba(16,16,16,.7) 80%);
+	opacity: .9;
+	border-radius: 1%;
+	box-shadow: 0px 5px 20px 2px #000, inset 0px 0px 20px 5px rgba(0,0,0,.9), inset 0px 0px 50px 5px rgba(0,0,0,0.7);
 	padding: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	z-index: 1;
 }
 
+#linksText p { 
+	background-color: #121212;
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	margin: 10%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 40pt;
+	font-weight: 900;
+	text-align: center;
+}
+
+#linksText p a:link {
+	color: transparent;
+	text-decoration:none;
+}
+
+#linksText p a:visited {
+	color: transparent;
+}
+
 
 #contact {
-	background: #050505;
+	background-color: #050505;
 	font: 14pt 'Roboto', sans-serif;	
 }
 
