@@ -253,7 +253,9 @@ main section:nth-child(odd) {
 
 #contact {
 	background-color: #050505;
-	font: 14pt 'Roboto', sans-serif;	
+	font: 14pt 'Roboto', sans-serif;
+	margin-bottom: 60px;
+	text-align: center;
 }
 
 footer {
@@ -263,12 +265,12 @@ footer {
 	width:100%;
 	margin-left:auto;
 	margin-right:auto;
-	background-color: #121212;
+	background-color:#121212;
 	color:#ebebeb;
 	font: 10pt 'Roboto', sans-serif;
     text-align: center;
-	padding-top: 10px;
-	background: linear-gradient(45deg, rgba(16,16,16,.1) 25%, rgba(0,7,93,.1) 30%, rgba(1,97,116,.1) 40%, rgba(5,135,59,.1) 45%, rgba(128,135,3,.1) 50%, rgba(143,121,5,.1) 55%, rgba(140,82,12,.1) 60%, rgba(31,7,85,.1) 65%, rgba(16,16,16,.1) 75%);
+	padding-top: 20px;
+	background: linear-gradient(45deg, rgba(16,16,16,.2) 25%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.1) 40%, rgba(5,135,59,.1) 45%, rgba(128,135,3,.1) 50%, rgba(143,121,5,.1) 55%, rgba(140,82,12,.1) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 75%);
 }
 
 
