@@ -88,8 +88,13 @@ main section {
 
 main section:nth-child(odd) {
     background-color: #050505;
-  }
+}
 
+main section h2 {
+	font: 18pt 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 600;
+}
 
 #home {
 	background-color: #050505;
@@ -253,7 +258,7 @@ main section:nth-child(odd) {
 
 #contact {
 	background-color: #050505;
-	font: 14pt 'Roboto', sans-serif;
+	font: 12pt 'Roboto', sans-serif;
 	margin-bottom: 60px;
 	text-align: center;
 }
