@@ -103,10 +103,7 @@ main section p {
 
 #home {
 	background: #050505;
-	width: 90%;
 }
-
-.slideshow-container, .mySlides, .prev, .next, .prev:hover, .next:hover, .text, .numbertext, .dot, .dot:hover, .active, .fade {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
