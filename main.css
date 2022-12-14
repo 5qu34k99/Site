@@ -6,13 +6,12 @@ font-family: 'Roboto Mono', monospace;
 font-family: 'Inconsolata', monospace;
 */
 
-/*change all hex to rgba or only use rgba when transparency is necessary?*/
-
 
 body {
-	background-color: #000;
+	background-color: #050505;
 	margin: 0;
 }
+
 
 #container {
     clear:both;
@@ -22,17 +21,18 @@ body {
 
 }
 
+
 header {
 	position:fixed;
 	left:0px;
 	top:0px;
-	height: 50px;
+	height: auto;
 	width: 100%;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-top: 20px;
+	padding-top: 25px;
 	text-align:center;
 	color: #fafafa;
 	box-shadow: 0px 5px 20px 1px #000; 
@@ -74,45 +74,21 @@ nav li {
 	padding-right: 20px;
 }
 
-#home-slideshow {
-	position:relative;
-	top: 70px;
-    width: 100%;
-    height: 700px;
-    margin-top: 0px;
-    padding: 0px;
-}
-
-img.home-slide {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
 
 main {
 	position:relative;
-	top: 70px;
+	top: 100px;
 }
 
 main section {
-	height: 700px;
-	padding: 4%;
+	height: auto;
+	padding: 5%;
 	color: #ebebeb;
-	overflow-y: auto;
-	box-shadow: inset 0px -30px 45px -20px #000;
 }
 
-main section::-webkit-scrollbar {
-    width: 20px;
-}
- 
-main section::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px #000;
-}
- 
-main section::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, rgba(9,9,9,.1) 20%, rgba(0,7,93,.6) 25%, rgba(1,97,116,.6) 35%, rgba(5,135,59,.6) 40%, rgba(128,135,3,.6) 45%, rgba(143,121,5,.6) 50%, rgba(140,82,12,.6) 55%, rgba(31,7,85,.6) 75%, rgba(9,9,9,.1) 80%);
-}
+main section:nth-child(odd) {
+    background-color: #050505;
+  }
 
 main section h2 {
 	font: 18pt 'Roboto', sans-serif;
@@ -124,176 +100,134 @@ main section p {
 	font-family: 'Roboto Mono', monospace;
 }
 
-#gallery {
+
+#home {
 	background: #050505;
 }
-#gallery h2 {
+
+.slideshow-container, .mySlides, .prev, .next, .prev:hover, .next:hover, .text, .numbertext, .dot, .dot:hover, .active, .fade {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*#homeImage {
 	text-align: center;
 }
-.gallery-temp {
-	width: 96%;
-	margin-right: 2%;
-	margin-left: 2%;
-}
 
-.gallery-temp figcaption{
-	font: 10pt 'Roboto Mono', monospace;
-	font-style: italic;
+#homeImage img {
+	max-width: 80%;
+	height: auto;
 }
-.story-temp {
-	display: inline-block;
-	width: 20%;
-	margin-right: 15%;
-}
+*/
 
-/*-------------------------------------------sandbox CSS-------------------------------------------*/
-
-.column {
-	position: relative;
-    float: left;
-    width: 10%;
-}
-	.column:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-/* Style the images inside the grid */
-.column img {
-    opacity: 0.7; 
-    cursor: pointer; 
-	position: absolute;
-    width: 97%;
-    height: 97%;
-	object-fit: cover;
-    object-position: 70% 0;
-}
-
-.column img:hover {
-    opacity: 1;
-}
-
-	/* The expanding image container */
-.storySet-container {
-    position: relative;
-    display: none;
-	background: #050505;
-	padding: 2%;
-	min-width: 100%;
-	box-sizing: border-box;
-	z-index: 98;
-}
-
-.storySet{
-	position: absolute;
-	width: 30%;
-	top: 0;
-	right: 0;
-	padding: 2%;
-}
-	
-.story h3{
-	font-family: 'Roboto Mono', monospace;
-}
-
-/*.setThumbs-container{
-}*/	
-	
-.setThumbs {
-	position:relative;
-    float: left;
-    width: 20%;
-	margin: 2px;
-}
-	
-.setThumbs:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-/* Style the images inside the grid */
-.setThumbs img {
-    opacity: 0.7; 
-    cursor: pointer; 
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-    object-position: 70% 0;
-}
-
-.setThumbs img:hover {
-    opacity: 1;
-}
-
-.setThumbs-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}	
-	
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#expandedImg {
-	width: 65%;
-	max-height: 70vh;
-	object-fit: contain;
-}	
-	
-/* Expanding image text */
-#imgtext {
-    color: #ebebeb;
-    font-size: 16px;
-	font-family: 'Roboto Mono', monospace;
-}
-	
-/* Close button inside the expanded image */
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: #fff;
-    font-size: 35px;
-    cursor: pointer;
-	z-index: 99;
-}
-
-/*-------------------------------------------end sandbox-------------------------------------------*/
-
-#about {
+#links {
 	background: #121212;
 }
 
-#aboutGraphic {
-	float: left;
-	width: 35%;
-	height: 90%;
+#linksGraphic {
+	width: 90%;
+	height: 50vh;
 	background: radial-gradient(farthest-corner at 750px 900px, rgba(16,16,16,.4) 20%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 40%, rgba(128,135,3,.4) 45%, rgba(143,121,5,.4) 50%, rgba(140,82,12,.4) 55%, rgba(31,7,85,.4) 70%, rgba(16,16,16,.4) 80%),
 		linear-gradient(105deg, rgba(16,16,16,.4) 20%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 40%, rgba(128,135,3,.4) 45%, rgba(143,121,5,.4) 50%, rgba(140,82,12,.4) 55%, rgba(31,7,85,.4) 70%, rgba(16,16,16,.4) 80%),
 		linear-gradient(355deg, rgba(16,16,16,.7) 20%, rgba(0,7,93,.7) 25%, rgba(1,97,116,.7) 35%, rgba(5,135,59,.7) 40%, rgba(128,135,3,.7) 45%, rgba(143,121,5,.7) 50%, rgba(140,82,12,.7) 55%, rgba(31,7,85,.7) 70%, rgba(16,16,16,.7) 80%);
-	margin-right: 2%;
 	opacity: .9;
 	border-radius: 1%;
 	box-shadow: 0px 5px 20px 2px #000, inset 0px 0px 20px 5px rgba(0,0,0,.9), inset 0px 0px 50px 5px rgba(0,0,0,0.7);
+	margin-left: auto;
+	margin-right: auto;
 	z-index: 1;
 }
 
-/* use this when using an image for the about graphic instead of the spectrolite gradient: #aboutGraphic img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	object-position: 30% 0;
-}*/
+#linksText {
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+}
 
-/*#aboutCopy {
-}*/
 
 #contact {
 	background: #050505;
@@ -314,42 +248,6 @@ footer {
 	padding-top: 10px;
 }
 
-
-/* old footer link styles
-
-footer aside.left {
-	width:25%;
-	height:auto;
-	float:left;
-	text-align:left;
-	font-weight:bold;
-	margin-left:25%;
-}
-
-footer aside.right {
-	width:25%;
-	height:auto;
-	float:right;
-	text-align:right;
-	margin-right:25%;
-}*/
-
-/*footer a:link {
-	color:#fff;
-}
-
-footer a:visited {
-	color:#fff;
-}
-	
-footer a:hover {
-	color:#cfc800;
-}
-
-footer a:active {
-	color:#cfc800;
-}
-*/
 
 a:link {
 	color:#fafafa;
