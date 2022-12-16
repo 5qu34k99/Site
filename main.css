@@ -47,7 +47,7 @@ header {
 	color: #fafafa;
 	box-shadow: 0px 5px 10px 1px #000; 
 	background-color:#0d0d0d;
-	background: linear-gradient(45deg, rgba(16,16,16,.4) 5%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 95%);
+	background: linear-gradient(45deg, rgba(16,16,16,.4) 5%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 75%, rgba(16,16,16,.4) 95%);
     z-index: 99;
 }
 
@@ -215,7 +215,7 @@ main section:nth-child(odd) {
 	font-weight: 900;
 	text-shadow: 1px 0px 0px rgba(250, 250, 250, .3), -1px -1px 0px rgba(250, 250, 250, .1);
 	display: block;
-	background: linear-gradient(45deg, rgba(16,16,16,.7) 5%, rgba(0,7,93,.7) 30%, rgba(1,97,116,.7) 40%, rgba(5,135,59,.7) 45%, rgba(128,135,3,.7) 50%, rgba(143,121,5,.7) 55%, rgba(140,82,12,.7) 60%, rgba(31,7,85,.7) 65%, rgba(16,16,16,.7) 95%);
+	background: linear-gradient(45deg, rgba(16,16,16,.7) 5%, rgba(0,7,93,.7) 25%, rgba(1,97,116,.7) 35%, rgba(5,135,59,.7) 45%, rgba(128,135,3,.7) 50%, rgba(143,121,5,.7) 55%, rgba(140,82,12,.7) 60%, rgba(31,7,85,.7) 75%, rgba(16,16,16,.7) 95%);
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -269,7 +269,7 @@ footer {
 	font: 10pt 'Roboto', sans-serif;
     text-align: center;
 	padding-top:30px;
-	background: linear-gradient(45deg, rgba(16,16,16,.2) 15%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.1) 40%, rgba(5,135,59,.1) 45%, rgba(128,135,3,.1) 50%, rgba(143,121,5,.1) 55%, rgba(140,82,12,.1) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 85%);
+	background: linear-gradient(45deg, rgba(16,16,16,.2) 15%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.2) 40%, rgba(5,135,59,.2) 45%, rgba(128,135,3,.2) 50%, rgba(143,121,5,.2) 55%, rgba(140,82,12,.2) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 85%);
 }
 
 
