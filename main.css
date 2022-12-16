@@ -104,6 +104,8 @@ main section h2 {
 }
 
 /* BEGIN SLIDESHOW */
+
+/*Home Section / Slideshow container*/
 #homeSlideshow {
 	width: 60%;
 	position: relative;
@@ -114,7 +116,7 @@ main section h2 {
 	flex: auto;
 }
 
-/*Area of images*/
+/*Image Box*/
 #slideshowContainer {
 	width: 100%;
 	min-width: 0;
@@ -123,12 +125,13 @@ main section h2 {
 	animation: slide 30s infinite;
 }
 
+/*Slideshow images*/
 #slideshowContainer img {
 	width: 100%;
 	height: 100%;
 }
 
-/*Animation activated by keyframes*/
+/*Animation keyframes*/
 @keyframes slide{
 	0%{
 		transform: translateX(0);
@@ -157,8 +160,11 @@ main section h2 {
 	81%{
 		transform: translateX(-400%);
 	}
-	100%{
+	99%{
 		transform: translateX(-400%);
+	}
+	100%{
+		transform: translateX(0);
 	}
 }
 /* END SLIDESHOW */
