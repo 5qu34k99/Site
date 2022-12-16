@@ -243,6 +243,7 @@ main section:nth-child(odd) {
 
 #contact p {
 	padding: 20px;
+	font-family: 'Roboto Mono', monospace;
 }
 
 footer {
