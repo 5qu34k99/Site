@@ -47,7 +47,7 @@ header {
 	color: #fafafa;
 	box-shadow: 0px 5px 10px 1px #000; 
 	background-color:#0d0d0d;
-	background: linear-gradient(45deg, rgba(16,16,16,.4) 25%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 75%);
+	background: linear-gradient(45deg, rgba(16,16,16,.4) 5%, rgba(0,7,93,.4) 30%, rgba(1,97,116,.4) 40%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 65%, rgba(16,16,16,.4) 95%);
     z-index: 99;
 }
 
@@ -83,7 +83,7 @@ nav li {
 	list-style-type: none;
     font: 16pt 'Roboto Mono', monospace;
     text-shadow: 0px 0px 2px #808080;
-	padding-top: 25px;
+	padding-top: 30px;
 }
 
 main section {
@@ -94,13 +94,6 @@ main section {
 
 main section:nth-child(odd) {
     background-color: #050505;
-}
-
-main section h2 {
-	font: 18pt 'Roboto', sans-serif;
-	font-style: italic;
-	font-weight: 600;
-	padding-bottom: 15px;
 }
 
 /* BEGIN SLIDESHOW */
@@ -114,6 +107,7 @@ main section h2 {
 	margin-right: auto;
 	background-color: #050505;
 	flex: auto;
+	
 }
 
 /*Image Box*/
@@ -129,6 +123,8 @@ main section h2 {
 #slideshowContainer img {
 	width: 100%;
 	height: 100%;
+	align-self: center;
+	border: solid 5px #050505;
 }
 
 /*Animation keyframes*/
@@ -170,68 +166,96 @@ main section h2 {
 /* END SLIDESHOW */
 
 #links {
-	background-color: #121212;
+	background-color: #999;
+	width: 100%;
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
-#linksGraphic {
-	width: 90%;
-	height: auto;
+       #linksGraphic {
+	
 	background: radial-gradient(farthest-corner at 750px 900px, rgba(16,16,16,.4) 20%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 40%, rgba(128,135,3,.4) 45%, rgba(143,121,5,.4) 50%, rgba(140,82,12,.4) 55%, rgba(31,7,85,.4) 70%, rgba(16,16,16,.4) 80%),
 		linear-gradient(105deg, rgba(16,16,16,.4) 20%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 40%, rgba(128,135,3,.4) 45%, rgba(143,121,5,.4) 50%, rgba(140,82,12,.4) 55%, rgba(31,7,85,.4) 70%, rgba(16,16,16,.4) 80%),
 		linear-gradient(357deg, rgba(16,16,16,.7) 20%, rgba(0,7,93,.7) 25%, rgba(1,97,116,.7) 35%, rgba(5,135,59,.7) 40%, rgba(128,135,3,.7) 45%, rgba(143,121,5,.7) 50%, rgba(140,82,12,.7) 55%, rgba(31,7,85,.7) 70%, rgba(16,16,16,.7) 80%);
 	opacity: .9;
+	
 	border-radius: 1%;
 	box-shadow: 0px 5px 20px 2px #000, inset 0px 0px 20px 5px rgba(0,0,0,.9), inset 0px 0px 50px 5px rgba(0,0,0,0.7);
-	margin-left: auto;
-	margin-right: auto;
+	
 }
 
-#linksText {
+#linksList {
 	width: auto;
 	height: auto;
 	padding: 25px;
-	margin-left: auto;
-	margin-right: auto;
+	list-style-type: none;
 }
 
-#linksText p { 
-	color: #050505;
-	margin: 10%;
-	font-family: 'Roboto', sans-serif;
-	font-size: 40pt;
-	font-weight: 900;
+#linksList li{
+	width: 100%;
+	min-width:fit-content;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-align: center;
-	text-shadow: 1px 0px 0px rgba(250, 250, 250, .3), -1px -1px 0px rgba(250, 250, 250, .1);
+	background-color: #bababa;
+	margin: 15px;
+	border-top: solid 1px rgba(200, 200, 200, .15);
+	border-left: solid 1px rgba(200, 200, 200, .15);
+	border-bottom: solid 1px rgba(255, 255, 255, .2);
+	border-right: solid 1px rgba(255, 255, 255, .2);
+	box-shadow: -1px -1px 1px rgba(250, 250, 250, .2), 1px 2px 4px rgba(0, 0, 0, .4);
+	border-radius: 2px;
+	
 }
 
-#linksText p a:link {
-	color: #050505;
+#linksList li a{ 
+	color: #212121;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30pt;
+	font-weight: 900;
+	text-shadow: 1px 0px 0px rgba(250, 250, 250, .3), -1px -1px 0px rgba(250, 250, 250, .1);
+	display: block;
+	background: linear-gradient(45deg, rgba(16,16,16,.7) 5%, rgba(0,7,93,.7) 30%, rgba(1,97,116,.7) 40%, rgba(5,135,59,.7) 45%, rgba(128,135,3,.7) 50%, rgba(143,121,5,.7) 55%, rgba(140,82,12,.7) 60%, rgba(31,7,85,.7) 65%, rgba(16,16,16,.7) 95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+#linksList li a:link {
+	color: #212121;
 	text-decoration:none;
 }
 
-#linksText p a:visited {
-	color: #050505;
+#linksList li a:visited {
+	color: #212121;
 }
 
-#linksText p a:hover {
-	color:rgba(207, 200, 0, .8);
+#linksList li a:hover {
+	color: transparent;
+  transition: 500ms ease;
 	text-shadow: none;
 }
 
-#linksText p a:active {
-	color:rgba(207, 200, 0, .8);
+#linksList li a:active {
+	color:#cfc800;
 	text-shadow: none;
 }
 
 
 #contact {
-	background-color: #050505;
-	font: 12pt 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-align: center;
+	padding: 9vh;
+}
+
+#contact h2 {
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: 600;
+	padding-bottom: 15px;
 }
 
 #contact p {
-	padding: 10px;
+	padding: 20px;
 }
 
 footer {
@@ -245,7 +269,7 @@ footer {
 	font: 10pt 'Roboto', sans-serif;
     text-align: center;
 	padding-top:30px;
-	background: linear-gradient(45deg, rgba(16,16,16,.2) 25%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.1) 40%, rgba(5,135,59,.1) 45%, rgba(128,135,3,.1) 50%, rgba(143,121,5,.1) 55%, rgba(140,82,12,.1) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 75%);
+	background: linear-gradient(45deg, rgba(16,16,16,.2) 15%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.1) 40%, rgba(5,135,59,.1) 45%, rgba(128,135,3,.1) 50%, rgba(143,121,5,.1) 55%, rgba(140,82,12,.1) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 85%);
 }
 
 
