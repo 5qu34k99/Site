@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 version
+* Browsers: >0.3%,last 4 version,not dead
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Inconsolata:wght@200;300;400;500;600;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -14,11 +14,11 @@ font-family: 'Inconsolata', monospace;
 */
 
 * {
--webkit-box-sizing: border-box;
-        box-sizing: border-box;
+box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
+
 
 body {
 	background-color: #050505;
@@ -53,10 +53,8 @@ header {
 	margin-left:auto;
 	margin-right:auto;
 	color: #fafafa;
-	-webkit-box-shadow: 0px 5px 10px 1px #000;
-	        box-shadow: 0px 5px 10px 1px #000; 
+	box-shadow: 0px 5px 10px 1px #000; 
 	background-color:#0d0d0d;
-	background: -o-linear-gradient(45deg, rgba(16,16,16,.4) 5%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 75%, rgba(16,16,16,.4) 95%);
 	background: linear-gradient(45deg, rgba(16,16,16,.4) 5%, rgba(0,7,93,.4) 25%, rgba(1,97,116,.4) 35%, rgba(5,135,59,.4) 45%, rgba(128,135,3,.4) 50%, rgba(143,121,5,.4) 55%, rgba(140,82,12,.4) 60%, rgba(31,7,85,.4) 75%, rgba(16,16,16,.4) 95%);
     z-index: 99;
 }
@@ -106,19 +104,17 @@ main section:nth-child(odd) {
     background-color: #050505;
 }
 
-/* BEGIN SLIDESHOW */
 
-/*Home Section / Slideshow container*/
-#homeSlideshow {
+/* BEGIN SLIDESHOW */
+/*Slideshow Section / Container*/
+#Slideshow {
 	width: 60%;
 	position: relative;
 	overflow: hidden;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #050505;
-	-webkit-box-flex: 1;
-	    -ms-flex: auto;
-	        flex: auto;
+	flex: auto;
 	
 }
 
@@ -127,8 +123,6 @@ main section:nth-child(odd) {
 	width: 100%;
 	min-width: 0;
 	max-height: 100%;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	-webkit-animation: slide 30s infinite;
 	        animation: slide 30s infinite;
@@ -138,9 +132,7 @@ main section:nth-child(odd) {
 #slideshowContainer img {
 	width: 100%;
 	height: 100%;
-	-ms-flex-item-align: center;
-	    -ms-grid-row-align: center;
-	    align-self: center;
+	align-self: center;
 	border: solid 5px #050505;
 }
 
@@ -239,6 +231,7 @@ main section:nth-child(odd) {
 }
 /* END SLIDESHOW */
 
+
 #links {
 	background-color: #999;
 	width: 100%;
@@ -267,8 +260,7 @@ main section:nth-child(odd) {
 	border-left: solid 1px rgba(200, 200, 200, .15);
 	border-bottom: solid 1px rgba(255, 255, 255, .2);
 	border-right: solid 1px rgba(255, 255, 255, .2);
-	-webkit-box-shadow: -1px -1px 1px rgba(250, 250, 250, .2), 1px 2px 4px rgba(0, 0, 0, .4);
-	        box-shadow: -1px -1px 1px rgba(250, 250, 250, .2), 1px 2px 4px rgba(0, 0, 0, .4);
+	box-shadow: -1px -1px 1px rgba(250, 250, 250, .2), 1px 2px 4px rgba(0, 0, 0, .4);
 	border-radius: 2px;
 }
 
@@ -279,7 +271,6 @@ main section:nth-child(odd) {
 	font-weight: 900;
 	text-shadow: 1px 0px 0px rgba(250, 250, 250, .3), -1px -1px 0px rgba(250, 250, 250, .1);
 	display: block;
-	background: -o-linear-gradient(45deg, rgba(16,16,16,.7) 5%, rgba(0,7,93,.7) 25%, rgba(1,97,116,.7) 35%, rgba(5,135,59,.7) 45%, rgba(128,135,3,.7) 50%, rgba(143,121,5,.7) 55%, rgba(140,82,12,.7) 60%, rgba(31,7,85,.7) 75%, rgba(16,16,16,.7) 95%);
 	background: linear-gradient(45deg, rgba(16,16,16,.7) 5%, rgba(0,7,93,.7) 25%, rgba(1,97,116,.7) 35%, rgba(5,135,59,.7) 45%, rgba(128,135,3,.7) 50%, rgba(143,121,5,.7) 55%, rgba(140,82,12,.7) 60%, rgba(31,7,85,.7) 75%, rgba(16,16,16,.7) 95%);
   	background-clip: text;
   	-webkit-background-clip: text;
@@ -296,8 +287,6 @@ main section:nth-child(odd) {
 
 #linksList li a:hover {
 	color: transparent;
-  -webkit-transition: 500ms ease;
-  -o-transition: 500ms ease;
   transition: 500ms ease;
 	text-shadow: none;
 }
@@ -326,6 +315,7 @@ main section:nth-child(odd) {
 	font-family: 'Roboto Mono', monospace;
 }
 
+
 footer {
   	bottom: 0;
 	min-height:80px;
@@ -337,7 +327,6 @@ footer {
 	font: 10pt 'Roboto', sans-serif;
     text-align: center;
 	padding-top:30px;
-	background: -o-linear-gradient(45deg, rgba(16,16,16,.2) 15%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.2) 40%, rgba(5,135,59,.2) 45%, rgba(128,135,3,.2) 50%, rgba(143,121,5,.2) 55%, rgba(140,82,12,.2) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 85%);
 	background: linear-gradient(45deg, rgba(16,16,16,.2) 15%, rgba(0,7,93,.2) 30%, rgba(1,97,116,.2) 40%, rgba(5,135,59,.2) 45%, rgba(128,135,3,.2) 50%, rgba(143,121,5,.2) 55%, rgba(140,82,12,.2) 60%, rgba(31,7,85,.2) 65%, rgba(16,16,16,.2) 85%);
 }
 
