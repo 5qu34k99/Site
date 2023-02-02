@@ -84,6 +84,7 @@ nav {
 	width: auto;
 	text-align: right;	
 	margin-right: 10%;
+	opacity: 1;
 }
 
 nav li {
@@ -256,7 +257,7 @@ main section:nth-child(odd) {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
-	background-color: #ebebeb;
+	background-color: #f3f3f3;
 	margin: 15px;
 	border-top: solid 1px rgba(200, 200, 200, .15);
 	border-left: solid 1px rgba(200, 200, 200, .15);
@@ -294,7 +295,7 @@ main section:nth-child(odd) {
 }
 
 #linksList li a:active {
-	color:#cfc800;
+	color:rgba(143,220,235,1);
 	text-shadow: none;
 }
 
@@ -343,9 +344,9 @@ a:visited {
 }
 	
 a:hover {
-	color:#cfc800;
+	color:#fff954;
 }
 
 a:active {
-	color:#cfc800;
+	color:#fff954;
 }
