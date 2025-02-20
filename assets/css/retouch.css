@@ -180,6 +180,8 @@ main section:nth-child(odd) {
     place-items: center;
     row-gap: 100px;
     min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+	text-align: center;
   }
 
 #photo-comparisons h2 {
