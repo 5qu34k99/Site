@@ -182,6 +182,13 @@ main section:nth-child(odd) {
     min-height: 100vh;
   }
 
+#photo-comparisons h2 {
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+
 #photo-comparisons img {
     display: block;
     max-width: 100%;
