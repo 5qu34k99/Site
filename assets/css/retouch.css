@@ -181,7 +181,7 @@ img {
     max-width: 100%;
   }
   
-  main {
+#photo-comparisons{
     display: grid;
     place-items: center;
     row-gap: 100px;
